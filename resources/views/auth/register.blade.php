@@ -31,7 +31,7 @@
                             <form method="POST" action="{{ route('register.perform') }}">
                                 @csrf
                                 <div class="flex flex-col mb-2">
-                                    <input type="text" name="username" class="form-control" placeholder="Nombre de Usuario"  aria-label="Name" value="{{ old('username') }}" >
+                                    <input type="text" name="username" class="form-control" placeholder="Nombre de Usuario" aria-label="Name" value="{{ old('username') }}" >
                                     @error('username') <p class='text-danger text-xs pt-1'> {{ $message }} </p> @enderror
                                 </div>
                                 <div class="flex flex-col mb-2">
